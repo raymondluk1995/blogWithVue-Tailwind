@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\Admin\DashboardController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -16,7 +17,5 @@ Route::get('/', function () {
 Route::middleware(['auth','verified'])
     ->prefix('dashboard')
     ->group(function() {
-        Route::get('/dashboard',function(){
-            return Inertia\Inertia::render('Dashboard');
-        })->name('dashboard');
+        Route::get('/',[DashboardController::class,'index'])->name('dashboard');
     });
