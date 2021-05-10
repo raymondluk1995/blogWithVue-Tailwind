@@ -11,7 +11,7 @@
         <div
           class="container mx-auto sm:px-0 text-white h-full w-full flex flex-col items-center justify-center text-2xl sm:text-5xl sm:justify-end"
         >
-          <div class="mb -4 sm:mb-8 text-center">About dfw us</div>
+          <div class="mb -4 sm:mb-8 text-center">About us</div>
         </div>
       </div>
     </div>
